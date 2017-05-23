@@ -12,11 +12,15 @@ class App extends Component {
     }
   }
 
+  addThing() {
+
+  }
+
   render() {
     return (
       <div className="App">
         <Header />
-        <ThingList things={this.state.things}/>
+        <ThingList things={this.state.things} addThing={this.AddThing}/>
       </div>
     );
   }
